@@ -749,7 +749,7 @@ class _VerticalPointerState extends MultiDragPointerState {
 class _Recognizer extends MultiDragGestureRecognizer<_VerticalPointerState> {
   @override
   _VerticalPointerState createNewPointerState(PointerDownEvent event) {
-    return _VerticalPointerState(event.position);
+    return _VerticalPointerState(event.position,event.kind);
   }
 
   @override
